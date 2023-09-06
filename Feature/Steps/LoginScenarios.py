@@ -28,11 +28,11 @@ def user_clicks_Login_button(context):
 def user_is_on_invetory_page(context):
     print ("invertory page is displayed")
 
-@then("'{text}' is displayed")
+@then('"{text}" is displayed')
 def is_displayed(context, text: str):
     print (f"{text} is displayed")
 
-@then("message error is displayed '{text}'")
+@then('message error is displayed "{text}"')
 def  message_error_is_displayed(context, text: str):
     print (f"{text} is displayed ")
     #"Epic sadface: Sorry, this user has been locked out."
@@ -41,4 +41,7 @@ def  message_error_is_displayed(context, text: str):
 def user_is_on_swag_labs_page(context):
     print ("checks that user is on swah lab page")
 
+@then('"{text}" is not displayed')
+def is_not_displayed(context, text: str):
+    print (f"{text} is displayed")
 
